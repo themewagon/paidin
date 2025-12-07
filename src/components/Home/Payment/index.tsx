@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { withBasePath } from '@/utils/urlHelper'
 
 const Payment = () => {
     return (
@@ -9,7 +10,7 @@ const Payment = () => {
                 <div className='grid grid-cols-1 lg:grid-cols-12 space-x-1'>
                     <div className='col-span-6'>
                         <Image
-                            src='/images/payment/payment.png'
+                            src={withBasePath('/images/payment/payment.png')}
                             alt='payment'
                             width={600}
                             height={500}

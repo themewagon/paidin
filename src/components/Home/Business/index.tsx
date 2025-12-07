@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { withBasePath } from '@/utils/urlHelper'
 
 const Business = () => {
     return (
@@ -26,7 +27,7 @@ const Business = () => {
                     </div>
                     <div className='col-span-6 flex justify-center mt-10 lg:mt-0'>
                         <Image
-                            src='/images/business/business.png'
+                            src={withBasePath('/images/business/business.png')}
                             alt='business'
                             width={1000}
                             height={805}

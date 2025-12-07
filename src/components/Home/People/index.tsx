@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { withBasePath } from '@/utils/urlHelper'
 
 const People = () => {
     return (
@@ -12,7 +13,7 @@ const People = () => {
                             <div className='flex items-center gap-10'>
                                 <div>
                                     <Image
-                                        src='/images/people/user.png'
+                                        src={withBasePath('/images/people/user.png')}
                                         alt='user'
                                         width={86}
                                         height={86}

@@ -1,16 +1,16 @@
-# CryptoFlow – One Page Template
+# Paidin - Free NextJs Landing Page Template with App Directory Routing
 #### Preview
 
- - [Demo](https://themewagon.github.io/cryptoflow/)
+ - [Demo](https://themewagon.github.io/paidin/)
 
 #### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/cryptoflow/)
+ - [Download from ThemeWagon](https://themewagon.com/themes/paidin/)
 
 ## Getting Started
 
 1. Clone Repository
 ```
-git clone https://github.com/themewagon/cryptoflow.git
+git clone https://github.com/themewagon/paidin.git
 ```
 2. Install Dependencies
 ```
@@ -30,12 +30,12 @@ bun dev
 
 ## Author 
 ```
-Design and code is completely written by codescandy and development team. 
+Design and code is completely written by GetNextJs Templates and development team. 
 ```
 
 ## License
 
- - Design and Code is Copyright &copy; [codescandy](https://codescandy.com)
+ - Design and Code is Copyright &copy; [GetNextJs Templates](https://getnextjstemplates.com/)
  - Licensed cover under [MIT]
  - Distributed by [ThemeWagon](https://themewagon.com)
 

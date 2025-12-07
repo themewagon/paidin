@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { featureData } from '@/app/api/data'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { withBasePath } from '@/utils/urlHelper'
 
 const Features = () => {
     return (
@@ -21,7 +22,7 @@ const Features = () => {
                             key={i}
                             className='bg-white rounded-2xl p-5 shadow-featureShadow'>
                             <Image
-                                src={item.imgSrc}
+                                src={withBasePath(item.imgSrc)}
                                 alt={item.imgSrc}
                                 width={55}
                                 height={55}

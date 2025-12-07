@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 // import Logo from "../Header/Logo";
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { withBasePath } from '@/utils/urlHelper'
 
 interface links {
     link: string
@@ -52,7 +53,7 @@ const footer = () => {
                     <div className='sm:col-span-6 lg:col-span-3'>
                         <div className='flex shrink-0 items-center border-right'>
                             <Image
-                                src='/images/logo/logo-white.svg'
+                                src={withBasePath('/images/logo/logo-white.svg')}
                                 alt='logo'
                                 width={214}
                                 height={55}

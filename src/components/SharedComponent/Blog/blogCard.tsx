@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Blog } from "@/types/blog";
 import { format } from "date-fns";
 import Link from "next/link";
+import { withBasePath } from "@/utils/urlHelper";
 
 const BlogCard = ({ blog }: { blog: Partial<Blog> }) => {
     const { title, coverImage, date, slug } = blog;
@@ -18,7 +19,7 @@ const BlogCard = ({ blog }: { blog: Partial<Blog> }) => {
             <Link href={`/blog/${blogSlug}`} className="group mb-10 flex items-center gap-9">
                 <div className="overflow-hidden rounded-lg">
                     <Image
-                        src={blogImage}
+                        src={withBasePath(blogImage)}
                         alt="image"
                         width={300}
                         height={250}
