@@ -1,8 +1,8 @@
 import type { NextConfig } from 'next'
 
-const isProd = true;
+const isProd = false;
 
-const basePath = isProd ? '/paidin-nextjs' : ''
+const basePath = isProd ? '/paidin' : ''
 
 const nextConfig: NextConfig = {
     basePath,
